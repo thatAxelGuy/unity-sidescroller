@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float speedModifier = 1.5f;
     [SerializeField] private float gravityModifier;
     [SerializeField] bool isOnGround = true;
+    [SerializeField] private ParticleSystem explosionParticles;
+    [SerializeField] private ParticleSystem dirtParticles;
     public bool gameOver = false;
     void Start()
     {
@@ -16,6 +18,7 @@ public class PlayerController : MonoBehaviour
         playerAnimator = GetComponent<Animator>();
         Physics.gravity *= gravityModifier;
         playerAnimator.speed *= speedModifier;
+        if(explosionParticles == null || dirtParticles == null) { Debug.LogAssertion("Missing Particle Sysytem!"); }
     }
 
     void Update()
@@ -25,6 +28,7 @@ public class PlayerController : MonoBehaviour
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
             playerAnimator.SetTrigger("Jump_trig");
+            dirtParticles.Stop();
         }
     }
 
@@ -34,13 +38,17 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+            dirtParticles.Play();
         }
         else if (collision.gameObject.CompareTag("Obstacle"))
         {
             gameOver = true;
             Debug.Log("Game Over!");
             playerAnimator.SetBool("Death_b", true);
-            playerAnimator.SetInteger("DeathType_int", Random.Range(1, 4));
+            playerAnimator.SetInteger("DeathType_int", Random.Range(1, 3));
+            explosionParticles.Play();
+            dirtParticles.Stop();
+            
         }
         
     }
