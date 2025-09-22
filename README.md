@@ -67,6 +67,3 @@ Open the MainScene and press ▶️ Play to run inside the editor.
 This project is for learning purposes only.
 Tutorial content © Unity Technologies.
 Code modifications © thatAxelGuy.
-
-yaml
-Copy code
