@@ -10,19 +10,19 @@ The player must time their jumps to avoid oncoming obstacles while enjoying musi
 ## 📸 Screenshots & Gameplay
 
 ### Editor View
-![Editor view](docs/Editor.png)
+![Editor view](Docs/Editor.png)
 
 ### In-Editor Gameplay
-![In-Editor Gameplay](docs/InEditorGameplay.gif)
+![In-Editor Gameplay](Docs/InEditorGameplay.gif)
 
 ### Fullscreen Gameplay
-![Fullscreen Gameplay](docs/FullScreenGameplay.gif)
+![Fullscreen Gameplay](Docs/FullScreenGameplay.gif)
 
 ### Gameplay Snapshot
-![Gameplay snapshot](docs/Gameplay.png)
+![Gameplay snapshot](Docs/Gameplay.png)
 
 ### Game Over Screen
-![Game Over](docs/GameOver.png)
+![Game Over](Docs/GameOver.png)
 
 ---
 
