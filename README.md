@@ -48,7 +48,7 @@ If you want to try it out:
 1. Clone this repo:
    ```bash
    git clone https://github.com/thatAxelGuy/unity-sidescroller.git
-Open the project in Unity Hub (tested with Unity version X.X.X).
+Open the project in Unity Hub (tested with Unity version 6000.0.37f1 LTS).
 
 Open the MainScene and press ▶️ Play to run inside the editor.
 
