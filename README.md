@@ -26,7 +26,7 @@ The player must time their jumps to avoid oncoming obstacles while enjoying musi
 
 ---
 
-## 🚀 What You’ll Learn
+## 🚀 Learning Goals
 
 By completing this project, I explored several Unity concepts:
 
