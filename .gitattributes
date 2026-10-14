@@ -1,2 +1,10 @@
 *.png filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
+
+# --- GitHub language stats (linguist) ---
+# Unity window layouts share the .wlt extension with Mathematica
+*.wlt linguist-detectable=false
+*.cs linguist-language=C#
+# Unity template / third-party content, not my code
+Assets/TutorialInfo/** linguist-vendored
+Assets/Course[[:space:]]Library/** linguist-vendored
